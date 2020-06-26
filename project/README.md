@@ -25,6 +25,9 @@ pip3 install virustotal-api
 pip3 install tlsh
 pip3 install python-tlsh
 pip3 install sdhash
+pip3 install pefile
+pip3 install yara
+pip3 install yara-python
 ```
 We can check the help section of the tool with: 
 ```bash
