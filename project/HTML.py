@@ -199,7 +199,6 @@ def create_html(output_file_name, family_name, sizes, entropies, dates_of_first_
              
              <!-- *** Section 5 *** --->
              <h2>5- Results of the best AVs</h2>
-             <p> According to the TOP 7 AVs, the total numbers of unique labels is: </p>
               <p>  We can plot the number of samples of the most frequent labels we have encountered: </p>  
              <iframe width="900" height="600" frameborder="0" seamless="seamless" scrolling="no" \
     src="''' + AVs + '''.embed?width=800&height=600"></iframe>
