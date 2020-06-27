@@ -49,3 +49,10 @@ Then, after all the samples are analyzed with virustotal, we can get:
 ![Image of first part of result](2.png)
 
 A file named "Report.html" is created in the same directory with the analysis of the samples. 
+
+## Troubleshooting
+
+A problem may occur when using yara by the tool after installing it. 
+You may get this error: "OSError: /usr/lib/libyara.so: cannot open shared object file: No such file or directory"
+This means that the loader is not finding the libyara library which needs to be found located in /usr/lib.
+To solve this, you just need to create a softlink from your downloaded libyara.so to /usr/lib/libyara.so.
