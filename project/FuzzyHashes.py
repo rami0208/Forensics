@@ -98,9 +98,9 @@ def table_of_tlsh():
 
 def table_of_yara(file, rules):
     yara_dict = match_yara(file, rules)
-    if yara_dict is not None:
-        with open('yara.csv', 'w') as f:
-            f.write("%s,%s\n" % ("File", "Matched rule(s)"))
+    with open('yara.csv', 'w') as f:
+        f.write("%s,%s\n" % ("File", "Matched rule(s)"))
+        if yara_dict is not None:
             for key in yara_dict.keys():
                 keyname = key.split("/")[1]
                 f.write("%s,%s\n" % (keyname, yara_dict[key]))
