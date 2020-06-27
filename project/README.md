@@ -16,19 +16,18 @@ The report generated contains the following information:
 
 In order to use this tool, we need to install these dependencies: 
 ```bash
-sudo apt install python3-pip
-pip3 install jsondatetime
-pip3 install chart_studio
-pip3 install seaborn
-pip3 install google
-pip3 install virustotal-api
-pip3 install tlsh
-pip3 install python-tlsh
-pip3 install sdhash
-pip3 install pefile
-pip3 install yara
-pip3 install yara-python
+pip3 install -r requirements.txt
 ```
+Then we need to install useful modules for Linux:
+* Yara from: https://yara.readthedocs.io/en/stable/gettingstarted.html
+* Ssdeep by doing: 
+```bash
+sudo apt-get install ssdeep
+```
+
+In case of problems, please refer to the troubleshooting section. 
+
+
 We can check the help section of the tool with: 
 ```bash
 Python3 Main.py [name of input samples] -h 
