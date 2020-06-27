@@ -18,6 +18,19 @@ In order to use this tool, we need to install these dependencies:
 ```bash
 pip3 install -r requirements.txt
 ```
+
+Other python dependencies need to be installed manually: 
+```bash
+pip3 install plotly
+pip3 install chart_studio
+pip3 install ipython
+pip3 install google
+pip3 install jsondatetime
+pip3 install python-tlsh
+pip3 install sdhash
+```
+
+
 Then we need to install useful modules for Linux:
 * Yara from: https://yara.readthedocs.io/en/stable/gettingstarted.html
 * Ssdeep by doing: 
