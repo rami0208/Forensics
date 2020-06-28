@@ -11,7 +11,7 @@ def usefulfunction(element):
     element = element.split("/")[1]
     return element
 
-# Table of numbers:
+# Table of numbers from csv
 def table_of_numbers():
     df = pd.read_csv("file_numbers.csv")
     html_numbers = df.to_html()
@@ -19,6 +19,8 @@ def table_of_numbers():
     Html_file.write(html_numbers)
     Html_file.close()
 
+
+# Create table of first_seen from csv
 def table_of_first_seen():
     df = pd.read_csv("datefirstseen.csv")
     html_numbers = df.to_html()
@@ -100,21 +102,23 @@ def table_of_yara(file, rules):
     yara_dict = match_yara(file, rules)
     with open('yara.csv', 'w') as f:
         f.write("%s,%s\n" % ("File", "Matched rule(s)"))
-        if yara_dict is not None:
+        if yara_dict is not None: 
             for key in yara_dict.keys():
                 keyname = key.split("/")[1]
                 f.write("%s,%s\n" % (keyname, yara_dict[key]))
+                value = yara_dict[key].split("/")[1]
+                f.write("%s,%s\n" % (keyname, value))
 
 
 def tableyara():
     dataframe = pd.read_csv("yara.csv")
     bl = dataframe.empty
-    if not bl:
+    if not bl: # if the dataframe is not empty, we create a html page having the matched yara rules
         yara = dataframe.to_html()
         Html_file = open("yara.html", "w")
         Html_file.write(yara)
         Html_file.close()
-    else:
+    else: # Else, we create a html table saying : no matched yara rules
         Html_file = open("yara.html", "w")
         message = """<html>
         <head></head>

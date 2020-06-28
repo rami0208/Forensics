@@ -26,7 +26,7 @@ from requests.auth import HTTPBasicAuth
 
 
 def sign_in():
-    # Sign in Plotly
+    # Sign in Plotly, you can replace with your plotly account settings if you prefer
     py.sign_in("rami002", "tgBBrvotx5v3BikEbJAz")
 
 
@@ -140,8 +140,9 @@ def plot_imphashes():
     return uniq2
 
 
-def get_resources_html(name_of_family):
+def get_resources_html():
     # Getting the resources concerning the family:
+    name_of_family = 'upatre'
     list_of_links = get_resources(name_of_family)
     string = "<ul>\n"
     for s in list_of_links:
@@ -198,6 +199,7 @@ def create_html(output_file_name, family_name, sizes, entropies, dates_of_first_
              
              <!-- *** Section 5 *** --->
              <h2>5- Results of the best AVs</h2>
+             <p> According to the TOP 7 AVs, the total numbers of unique labels is: </p>
               <p>  We can plot the number of samples of the most frequent labels we have encountered: </p>  
              <iframe width="900" height="600" frameborder="0" seamless="seamless" scrolling="no" \
     src="''' + AVs + '''.embed?width=800&height=600"></iframe>
@@ -265,6 +267,8 @@ def get_pages(username, auth, headers, page_size):
         yield page
 
 
+# Since with a basic plotly account, we can only draw 100 charts, this function is used to delete the old charts for every new family so that we can plot as many charts as we want with plotly. 
+
 def permanently_delete_files(username, auth, headers, page_size=500, filetype_to_delete='plot'):
     for page in get_pages(username, auth, headers, page_size):
         for x in range(0, len(page['children']['results'])):
@@ -281,8 +285,8 @@ def permanently_delete_files(username, auth, headers, page_size=500, filetype_to
 
 
 def delete_old():
-    username = 'rami002' # Replace with YOUR USERNAME
-    api_key = 'tgBBrvotx5v3BikEbJAz' # Replace with YOUR API KEY
+    username = 'rami002' 
+    api_key = 'tgBBrvotx5v3BikEbJAz' 
     auth = HTTPBasicAuth(username, api_key)
     headers = {'Plotly-Client-Platform': 'python'}
 
