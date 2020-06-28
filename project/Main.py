@@ -70,7 +70,7 @@ def main():
     compilation_times = plot_compilation_times()
     number_votes = plot_number_votes()
     imphashes = plot_imphashes()
-    resources = get_resources_html()
+    resources = get_resources_html(family_name)
 
     create_html(output_file, family_name, sizes, entropies, dates_of_first_seen, AVs, compilation_times,
                 number_votes, imphashes, resources)

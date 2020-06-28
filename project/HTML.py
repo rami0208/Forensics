@@ -140,9 +140,8 @@ def plot_imphashes():
     return uniq2
 
 
-def get_resources_html():
+def get_resources_html(name_of_family):
     # Getting the resources concerning the family:
-    name_of_family = 'upatre'
     list_of_links = get_resources(name_of_family)
     string = "<ul>\n"
     for s in list_of_links:
