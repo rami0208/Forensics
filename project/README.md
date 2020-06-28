@@ -70,6 +70,7 @@ You may get this error: "OSError: /usr/lib/libyara.so: cannot open shared object
 This means that the loader is not finding the libyara library which needs to be found located in /usr/lib.
 To solve this, you just need to create a softlink from your downloaded libyara.so to /usr/lib/libyara.so.
 
-## Remarks: 
+
+## Remarks
 
 In this tool, I'm using plotly to plot the charts, and virus total to get information about the samples. I'm using API keys for authentication to use these tools (Not hidden using a config file since this tool is for educative purpose. There is a rate limit in VT and plotly so these API keys cannot be abused for DOS attacks for example). If you prefer, you can use your own plotly and VT accounts, but you can as well use my own API keys to generate the reports. 
