@@ -40,7 +40,7 @@ def main():
     sign_in()
 
     # Delete old graphs, to free space in plotly:
-    delete_old()
+    # delete_old() # It is possible to delete the old graphs from plotly, to free the space for the next use, but if you do so, the graphs for old reports won't exist anymore since the graphs are taken from the account. To generate as many reports as we want, we need to upgrade plotly account, or use another library with less nice graphs. 
 
     # Creating html tables for results:
     table_of_numbers()
