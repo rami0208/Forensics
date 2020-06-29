@@ -268,6 +268,7 @@ def get_pages(username, auth, headers, page_size):
 
 
 # Since with a basic plotly account, we can only draw 100 charts, this function is used to delete the old charts for every new family so that we can plot as many charts as we want with plotly. 
+# Graphs for old reports will be removed as well !!
 
 def permanently_delete_files(username, auth, headers, page_size=500, filetype_to_delete='plot'):
     for page in get_pages(username, auth, headers, page_size):
