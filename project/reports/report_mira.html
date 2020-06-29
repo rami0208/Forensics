@@ -1,0 +1,88 @@
+
+    <html>
+        <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+            <style>body{ margin:0 100; background:whitesmoke; }</style>
+        </head>
+        <body>
+            <h1> Report for analysing the list of samples belonging to the family: mira</h1>
+            <p>To analyze the list of samples, we have associated a number to each file, please refer to this table to find which file is associated to which number</p>
+            <button onclick="document.location = 'html_file_numbers.html'">Files and numbers association</button>
+            <!-- *** Section 1 *** --->
+            <h2>1- Distribution of sizes</h2>
+            <iframe width="900" height="600" frameborder="0" seamless="seamless" scrolling="no"     src="https://plotly.com/~rami002/341/.embed?width=800&height=600"></iframe>
+    
+    
+              <!-- *** Section 2 *** --->
+            <h2>2- Distribution of entropies</h2>
+            <iframe width="900" height="600" frameborder="0" seamless="seamless" scrolling="no"     src="https://plotly.com/~rami002/343/.embed?width=800&height=600"></iframe>
+    
+    
+            <!-- *** Section 3 *** --->
+            <h2>3- Distribution of dates of first seen</h2>
+            <iframe width="900" height="600" frameborder="0" seamless="seamless" scrolling="no"     src="https://plotly.com/~rami002/347/.embed?width=800&height=600"></iframe>
+            <p> Here you can find the table associating each file to its table of first seen </p>
+             <button onclick="document.location = 'firstseen.html'">Date of first seen</button>
+    
+            <!-- *** Section 4 *** --->
+            <h2>4- Distribution of matches according to SSDEEP and TLSH</h2>
+            <p>
+                <img src = "subplot.png"
+                alt = "Heatmap" />
+             </p>
+             
+             <p> Here you can find the table associating file names and numbers with the ssdeep scores </p>
+             <button onclick="document.location = 'ssdeep.html'">SSDEEP scores</button>
+             
+             <p> Here you can find the table associating file names and numbers with the TLSH scores </p>
+             <button onclick="document.location = 'tlsh.html'">TLSH scores</button>
+             
+             
+             <!-- *** Section 5 *** --->
+             <h2>5- Results of the best AVs</h2>
+              <p>  We can plot the number of samples of the most frequent labels we have encountered: </p>  
+             <iframe width="900" height="600" frameborder="0" seamless="seamless" scrolling="no"     src="https://plotly.com/~rami002/345/.embed?width=800&height=600"></iframe>
+             <p> Here you can find the results of the best AVs</p>
+             <button onclick="document.location = 'avresults.html'">AV results</button>
+             
+              <!-- *** Section 6 *** --->
+              <h2>6- Samples compilation Time</h2>
+              <iframe width="900" height="600" frameborder="0" seamless="seamless" scrolling="no"     src="https://plotly.com/~rami002/349/.embed?width=800&height=600"></iframe>
+    
+              <!-- *** Section 7 *** --->
+              <h2>7- Number of matches</h2>
+              <iframe width="900" height="600" frameborder="0" seamless="seamless" scrolling="no"     src="https://plotly.com/~rami002/351/.embed?width=800&height=600"></iframe>
+              <p> Here you can find the detailed results about the matches</p>
+              <button onclick="document.location = 'matches.html'">AV results</button>
+              
+              
+              <!-- *** Section 8 *** --->
+              <h2>8- Table of Vhashes</h2>
+              <p> Here you can find the table associating each file to its Vhash</p>
+              <button onclick="document.location = 'vhashes.html'">Vhashes</button>
+              
+              <!-- *** Section 9*** --->
+              <h2>9- Table of Imphashes</h2>
+              <p> Most found Imphashes</p>
+              <iframe width="900" height="800" frameborder="0" seamless="seamless" scrolling="no"     src="https://plotly.com/~rami002/353/.embed?width=800&height=800"></iframe>
+              <p> Here you can find the table associating each file to its Imphash</p>
+              <button onclick="document.location = 'Imphashes.html'">Impashes</button>
+              
+               <!-- *** Section 10*** --->
+              <h2>10- Matching YARA rules</h2>
+              <p> Here you can find the table associating each file to its matched YARA rules</p>
+                <button onclick="document.location = 'yara.html'">Matched YARA rules</button>
+
+              
+              <!-- *** Section 11*** --->
+              <h2>11- Best resources available on this family</h2> <ul>
+<li><a href="https://en.wikipedia.org/wiki/Mirai_(malware)">https://en.wikipedia.org/wiki/Mirai_(malware)</a>
+</li><li><a href="https://cyware.com/news/the-decryption-key-for-planetary-ransomware-family-will-help-you-retrieve-your-locked-files-for-free-73b11478">https://cyware.com/news/the-decryption-key-for-planetary-ransomware-family-will-help-you-retrieve-your-locked-files-for-free-73b11478</a>
+</li><li><a href="http://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=worm:win32/mira.a&ThreatID=2147708025">http://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=worm:win32/mira.a&ThreatID=2147708025</a>
+</li><li><a href="https://www.researchgate.net/figure/Malware-Image-Examples-of-the-Mirai-Family_fig4_323142158">https://www.researchgate.net/figure/Malware-Image-Examples-of-the-Mirai-Family_fig4_323142158</a>
+</li><li><a href="http://lefilcapstan.fr/vfl4x6/ransomware-decryptor.html">http://lefilcapstan.fr/vfl4x6/ransomware-decryptor.html</a>
+</li>
+</ul>
+               
+        </body>
+    </html>
