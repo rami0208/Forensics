@@ -73,4 +73,4 @@ To solve this, you just need to create a softlink from your downloaded libyara.s
 
 ## Remarks
 
-In this tool, I'm using plotly to plot the charts, and virus total to get information about the samples. I'm using API keys for authentication to use these tools (Not hidden using a config file since this tool is for educative purpose. There is a rate limit in VT and plotly so these API keys cannot be abused for DOS attacks for example). If you prefer, you can use your own plotly and VT accounts, but you can as well use my own API keys to generate the reports. 
+In this tool, I'm using plotly to plot the charts, and virus total to get information about the samples. I'm using API keys for authentication to use these tools (Not hidden using a config file since this tool is for educative purpose. There is a rate limit in VT and plotly so these API keys cannot be abused for DOS attacks for example). If you prefer, you can use your own plotly and VT accounts, but you can as well use my own API keys to generate the reports. Due to the rate limit of plotly, you cannot generate as much graphs as you want (limit of 100 graphs). 
