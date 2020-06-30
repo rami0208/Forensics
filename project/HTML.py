@@ -27,7 +27,7 @@ from requests.auth import HTTPBasicAuth
 
 def sign_in():
     # Sign in Plotly, you can replace with your plotly account settings if you prefer
-    py.sign_in("rami002", "tgBBrvotx5v3BikEbJAz")
+    py.sign_in("rami02", "od4kjVYOUmRjBm0DzDoI")
 
 
 def plot_sizes():
