@@ -11,7 +11,7 @@ chardet==3.0.4
 configparser==4.0.2
 contextlib2==0.6.0.post1
 coverage==5.1
-cryptography==2.8
+cryptography==3.2
 cstruct==1.0
 cycler==0.10.0
 decorator==4.1.2
