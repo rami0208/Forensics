@@ -41,7 +41,7 @@ numpy==1.16.6
 olefile==0.45.1
 openpyxl==2.4.9
 packaging==19.2
-paramiko==2.7.0
+paramiko==2.10.1
 pathlib2==2.3.5
 pefile==2019.4.18
 Pillow==5.1.0
